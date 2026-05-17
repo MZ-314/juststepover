@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JustStepover — Football. Properly Written.</title>
+  <meta name="description" content="JustStepover — sharp football writing. Premier League, Champions League, culture, and everything in between.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span class="top-bar-date" id="today-date"></span>
+    <a href="#">Support JustStepover</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Just<span>Step</span><em>over</em></a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="#premier-league" class="nav-link">Premier League</a>
+        <a href="#champions-league" class="nav-link highlight">Champions League</a>
+        <a href="#culture" class="nav-link">Culture</a>
+        <a href="#opinion" class="nav-link">Opinion</a>
+        <a href="#transfers" class="nav-link">Transfers</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost">Search</button>
+        <button class="btn btn-primary">Subscribe</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breaking Banner -->
+  <div class="breaking-banner">
+    <span class="breaking-label">Latest</span>
+    <span class="breaking-text">Welcome to JustStepover — sharp football writing, properly done. New articles dropping regularly.</span>
+  </div>
+
+  <!-- Hero Section -->
+  <main>
+    <div class="page-wrap">
+      <section class="hero-section">
+        <div class="section-label">Top Stories</div>
+        <div class="hero-grid">
+          <div id="hero-main">
+            <div class="loading"><div class="loading-spinner"></div>Loading stories…</div>
+          </div>
+          <div class="hero-side" id="hero-side"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- All Articles -->
+    <div class="page-wrap">
+      <section class="content-section" id="premier-league">
+        <div class="section-label">All Articles</div>
+        <div class="content-grid" id="articles-grid">
+          <div class="loading" style="grid-column:1/-1;"><div class="loading-spinner"></div>Loading…</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Opinion Strip -->
+    <section class="opinion-section" id="opinion">
+      <div class="opinion-inner">
+        <div class="opinion-label">Editor's note</div>
+        <blockquote class="opinion-quote">
+          Football deserves writing that matches its drama. That's what we're here for.
+        </blockquote>
+        <p class="opinion-attr">— JustStepover</p>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="newsletter-inner">
+        <h2 class="newsletter-title">Get JustStepover in your inbox</h2>
+        <p class="newsletter-sub">New articles, sharp takes, no noise.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input class="newsletter-input" type="email" placeholder="your@email.com" required>
+          <button class="newsletter-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Just<span>Step</span><em>over</em></div>
+      <div class="footer-tagline">Football. Properly written.</div>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="#premier-league" class="footer-link">Premier League</a>
+        <a href="#champions-league" class="footer-link">Champions League</a>
+        <a href="#culture" class="footer-link">Culture</a>
+        <a href="#opinion" class="footer-link">Opinion</a>
+        <a href="#about" class="footer-link">About</a>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 JustStepover. All rights reserved.</span>
+        <span>Built with <span class="footer-mint">♥</span> for the beautiful game.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

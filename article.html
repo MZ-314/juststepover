@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JustStepover</title>
+  <meta name="description" content="Football writing from JustStepover.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <span class="top-bar-date" id="today-date"></span>
+    <a href="#">Support JustStepover</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Just<span>Step</span><em>over</em></a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#premier-league" class="nav-link">Premier League</a>
+        <a href="index.html#champions-league" class="nav-link highlight">Champions League</a>
+        <a href="index.html#culture" class="nav-link">Culture</a>
+        <a href="index.html#opinion" class="nav-link">Opinion</a>
+        <a href="index.html#transfers" class="nav-link">Transfers</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-ghost">Search</button>
+        <button class="btn btn-primary">Subscribe</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Back link -->
+  <a href="index.html" class="back-link">
+    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+    </svg>
+    All Articles
+  </a>
+
+  <!-- Article Hero -->
+  <div id="article-hero" class="article-hero">
+    <div class="loading" style="padding:120px 24px;color:rgba(255,255,255,0.6);background:var(--ink);">
+      <div class="loading-spinner" style="border-color:rgba(255,255,255,0.2);border-top-color:var(--mint);"></div>
+      Loading article…
+    </div>
+  </div>
+
+  <!-- Article Meta Bar -->
+  <div class="article-meta-bar">
+    <div class="article-meta-inner" id="article-meta"></div>
+  </div>
+
+  <!-- Article Body -->
+  <div class="article-body" id="article-body"></div>
+
+  <!-- Related Articles -->
+  <div id="related-articles" style="background:var(--off-white);border-top:1px solid var(--border);"></div>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <div class="newsletter-inner">
+      <h2 class="newsletter-title">Enjoyed this? Get more.</h2>
+      <p class="newsletter-sub">New articles from JustStepover, straight to your inbox.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input class="newsletter-input" type="email" placeholder="your@email.com" required>
+        <button class="newsletter-btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Just<span>Step</span><em>over</em></div>
+      <div class="footer-tagline">Football. Properly written.</div>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="index.html#premier-league" class="footer-link">Premier League</a>
+        <a href="index.html#champions-league" class="footer-link">Champions League</a>
+        <a href="index.html#culture" class="footer-link">Culture</a>
+        <a href="index.html#opinion" class="footer-link">Opinion</a>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 JustStepover. All rights reserved.</span>
+        <span>Built with <span class="footer-mint">♥</span> for the beautiful game.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
