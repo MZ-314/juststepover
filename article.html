@@ -10,89 +10,152 @@
 </head>
 <body>
 
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <span class="top-bar-date" id="today-date"></span>
-    <a href="#">Support JustStepover</a>
+<!-- ── Drawer Overlay ── -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<!-- ── Mobile Drawer ── -->
+<nav class="mobile-drawer" id="mobileDrawer" aria-label="Site navigation">
+  <div class="drawer-header">
+    <span class="drawer-logo">Just<em>Stepover</em></span>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
   </div>
+  <div class="drawer-nav-item">
+    <button class="drawer-main-link" data-drawer-toggle>Premier League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="drawer-sub"><a href="index.html">Title Race</a><a href="index.html">Match Reports</a><a href="index.html">Top Scorers</a><a href="index.html">Relegation Watch</a></div>
+  </div>
+  <div class="drawer-nav-item">
+    <button class="drawer-main-link" data-drawer-toggle>Champions League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="drawer-sub"><a href="index.html">Group Stage</a><a href="index.html">Knockouts</a><a href="index.html">Final</a></div>
+  </div>
+  <div class="drawer-nav-item">
+    <button class="drawer-main-link" data-drawer-toggle>Transfers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="drawer-sub"><a href="index.html">Summer Window</a><a href="index.html">Rumours</a><a href="index.html">Done Deals</a></div>
+  </div>
+  <div class="drawer-nav-item">
+    <button class="drawer-main-link" data-drawer-toggle>Culture <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="drawer-sub"><a href="index.html">History</a><a href="index.html">Fan Culture</a><a href="index.html">Columns</a></div>
+  </div>
+  <div class="drawer-nav-item">
+    <button class="drawer-main-link" data-drawer-toggle>Opinion <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="drawer-sub"><a href="index.html">Editor's Picks</a><a href="index.html">Hot Takes</a></div>
+  </div>
+  <div class="drawer-ctas">
+    <a href="#" class="drawer-cta drawer-cta-red" id="drawerSubscribe">Subscribe to newsletter</a>
+    <a href="index.html" class="drawer-cta drawer-cta-outline">← Back to Home</a>
+  </div>
+</nav>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="site-logo">Just<span>Step</span><em>over</em></a>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="index.html#premier-league" class="nav-link">Premier League</a>
-        <a href="index.html#champions-league" class="nav-link highlight">Champions League</a>
-        <a href="index.html#culture" class="nav-link">Culture</a>
-        <a href="index.html#opinion" class="nav-link">Opinion</a>
-        <a href="index.html#transfers" class="nav-link">Transfers</a>
-      </nav>
-      <div class="header-actions">
-        <button class="btn btn-ghost">Search</button>
-        <button class="btn btn-primary">Subscribe</button>
-      </div>
+<!-- ── Top Bar ── -->
+<div class="top-bar">
+  <span class="top-bar-date" id="today-date"></span>
+  <a href="#">Support JustStepover</a>
+</div>
+
+<!-- ── Site Header ── -->
+<header class="site-header">
+  <div class="logo-row">
+    <div class="logo-row-left">
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html" class="site-logo">Just<em>Stepover</em></a>
     </div>
-  </header>
-
-  <!-- Back link -->
-  <a href="index.html" class="back-link">
-    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-    </svg>
-    All Articles
-  </a>
-
-  <!-- Article Hero -->
-  <div id="article-hero" class="article-hero">
-    <div class="loading" style="padding:120px 24px;color:rgba(255,255,255,0.6);background:var(--ink);">
-      <div class="loading-spinner" style="border-color:rgba(255,255,255,0.2);border-top-color:var(--mint);"></div>
-      Loading article…
+    <div class="logo-row-right">
+      <button class="btn btn-search" id="searchBtn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search
+      </button>
+      <button class="btn btn-subscribe" id="subscribeBtn">Subscribe</button>
     </div>
   </div>
-
-  <!-- Article Meta Bar -->
-  <div class="article-meta-bar">
-    <div class="article-meta-inner" id="article-meta"></div>
+  <div class="nav-tabs-row">
+    <div class="nav-tab" data-tab><button class="nav-tab-btn" data-tab-btn>Premier League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-dropdown"><a href="index.html">Title Race</a><a href="index.html">Match Reports</a><a href="index.html">Top Scorers</a></div></div>
+    <div class="nav-tab" data-tab><button class="nav-tab-btn" data-tab-btn>Champions League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-dropdown"><a href="index.html">Group Stage</a><a href="index.html">Knockouts</a><a href="index.html">Final</a></div></div>
+    <div class="nav-tab" data-tab><button class="nav-tab-btn" data-tab-btn>Transfers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-dropdown"><a href="index.html">Summer Window</a><a href="index.html">Rumours</a><a href="index.html">Done Deals</a></div></div>
+    <div class="nav-tab" data-tab><button class="nav-tab-btn" data-tab-btn>Tactics &amp; Analysis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-dropdown"><a href="index.html">Tactical Breakdowns</a><a href="index.html">Manager Profiles</a></div></div>
+    <div class="nav-tab" data-tab><button class="nav-tab-btn" data-tab-btn>Culture <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-dropdown"><a href="index.html">History</a><a href="index.html">Fan Culture</a><a href="index.html">Columns</a></div></div>
+    <div class="nav-tab" data-tab><button class="nav-tab-btn" data-tab-btn>Opinion <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button><div class="nav-dropdown"><a href="index.html">Editor's Picks</a><a href="index.html">Hot Takes</a></div></div>
   </div>
+</header>
 
-  <!-- Article Body -->
-  <div class="article-body" id="article-body"></div>
+<!-- Back link -->
+<a href="index.html" class="back-link">
+  <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+  All Articles
+</a>
 
-  <!-- Related Articles -->
-  <div id="related-articles" style="background:var(--off-white);border-top:1px solid var(--border);"></div>
+<!-- Article Hero -->
+<div id="article-hero" class="article-hero">
+  <div class="loading" style="padding:100px 24px;color:rgba(255,255,255,0.5);background:var(--ink);">
+    <div class="loading-spinner" style="border-color:rgba(255,255,255,0.15);border-top-color:var(--red);"></div>
+    Loading…
+  </div>
+</div>
 
-  <!-- Newsletter -->
-  <section class="newsletter-section">
-    <div class="newsletter-inner">
-      <h2 class="newsletter-title">Enjoyed this? Get more.</h2>
-      <p class="newsletter-sub">New articles from JustStepover, straight to your inbox.</p>
-      <form class="newsletter-form" onsubmit="return false;">
-        <input class="newsletter-input" type="email" placeholder="your@email.com" required>
-        <button class="newsletter-btn" type="submit">Subscribe</button>
-      </form>
+<!-- Article Meta Bar -->
+<div class="article-meta-bar">
+  <div class="article-meta-inner" id="article-meta"></div>
+</div>
+
+<!-- Article Body -->
+<div class="article-body" id="article-body"></div>
+
+<!-- Related Articles -->
+<div id="related-articles" style="background:var(--off-white);border-top:1px solid var(--border);"></div>
+
+<!-- Newsletter -->
+<section class="newsletter-section">
+  <div class="newsletter-inner">
+    <h2 class="newsletter-title">Enjoyed this? Get more.</h2>
+    <p class="newsletter-sub">New articles from JustStepover, straight to your inbox.</p>
+    <form class="newsletter-form" id="newsletterForm">
+      <input class="newsletter-input" type="email" placeholder="your@email.com" required>
+      <button class="newsletter-btn" type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Just<em>Stepover</em></div>
+    <div class="footer-tagline">Football. Properly written.</div>
+    <div class="footer-cols">
+      <div class="footer-col"><div class="footer-col-label">Competitions</div><a href="index.html">Premier League</a><a href="index.html">Champions League</a><a href="index.html">FA Cup</a></div>
+      <div class="footer-col"><div class="footer-col-label">Topics</div><a href="index.html">Transfers</a><a href="index.html">Tactics</a><a href="index.html">Culture</a><a href="index.html">Opinion</a></div>
+      <div class="footer-col"><div class="footer-col-label">More</div><a href="#">About</a><a href="#">Contact</a><a href="#">Newsletter</a></div>
+      <div class="footer-col"><div class="footer-col-label">Legal</div><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
     </div>
-  </section>
+    <div class="footer-bottom">&copy; 2025 JustStepover. All rights reserved.</div>
+  </div>
+</footer>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-logo">Just<span>Step</span><em>over</em></div>
-      <div class="footer-tagline">Football. Properly written.</div>
-      <div class="footer-links">
-        <a href="index.html" class="footer-link">Home</a>
-        <a href="index.html#premier-league" class="footer-link">Premier League</a>
-        <a href="index.html#champions-league" class="footer-link">Champions League</a>
-        <a href="index.html#culture" class="footer-link">Culture</a>
-        <a href="index.html#opinion" class="footer-link">Opinion</a>
-      </div>
-      <div class="footer-bottom">
-        <span>&copy; 2025 JustStepover. All rights reserved.</span>
-        <span>Built with <span class="footer-mint">♥</span> for the beautiful game.</span>
-      </div>
+<!-- Search Modal -->
+<div class="modal-backdrop" id="searchModal">
+  <div class="search-box">
+    <div class="search-input-row">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--ink-soft)" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input class="search-input" id="searchInput" type="text" placeholder="Search articles…" autocomplete="off">
+      <button class="search-close-btn" id="searchClose">×</button>
     </div>
-  </footer>
+    <div class="search-hint">Type to search all articles on JustStepover</div>
+  </div>
+</div>
 
-  <script src="js/main.js"></script>
+<!-- Subscribe Modal -->
+<div class="modal-backdrop" id="subscribeModal" style="align-items:center;">
+  <div class="subscribe-box">
+    <button class="modal-close-x" id="subscribeClose">×</button>
+    <div class="subscribe-title">Join JustStepover</div>
+    <div class="subscribe-body">Get the best football writing delivered to your inbox. No spam, no filler — just sharp takes when they drop.</div>
+    <form class="subscribe-form" id="subscribeForm">
+      <input class="subscribe-input" type="text" placeholder="Your name" required>
+      <input class="subscribe-input" type="email" placeholder="Your email address" required>
+      <button class="subscribe-btn" type="submit">Subscribe — it's free</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
