@@ -161,5 +161,52 @@
         "text": "Three games. Anything can happen. It usually does. Keep watching."
       }
     ]
+  },
+  {
+    "id": "5",
+    "slug": "Neymar-legacy",
+    "title": "Neymar is Back for the World Cup.",
+    "subtitle": "After 943 days away and a career nearly derailed by injury, Brazil's all-time top scorer is heading to his fourth World Cup.",
+    "author": "Mustafiz Ahmed",
+    "date": "2026-05-18",
+    "category": "World Cup",
+    "featured": false,
+    "imageUrl": "https://images.unsplash.com/photo-1551958219-acbc595bc87f?w=1200&q=80",
+    "imageCaption": "Neymar Jr. celebrates with the Brazilian national team — a sight fans will witness once more at the 2026 World Cup.",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "On the evening of May 18, 2026, at Rio de Janeiro's Museum of Tomorrow, Carlo Ancelotti made it official: Neymar Jr. is going to the World Cup. The announcement triggered wild scenes outside the venue, where fans had gathered for hours chanting his name, and sent the 34-year-old into tears as he called his father to share the news — 'We did it, Dad. We made it.' It was the kind of moment that reminds you football is never just about football."
+      },
+      {
+        "type": "paragraph",
+        "text": "The road back has been anything but straightforward. Neymar tore his left ACL in October 2023 during a World Cup qualifier against Uruguay — carried off on a stretcher in tears, his last image in a Brazil shirt for almost three years. A disastrous spell at Al Hilal followed, where he made just seven appearances in 18 months before departing as a free agent. Then came a return to his boyhood club Santos, more hamstring injuries, and meniscus surgery in December 2025. For a long time, many wrote the chapter closed."
+      },
+      {
+        "type": "subheading",
+        "text": "A Revival at Santos, and a Case That Couldn't Be Ignored"
+      },
+      {
+        "type": "paragraph",
+        "text": "What changed the narrative was form. Since recovering from surgery, Neymar scored six goals and provided four assists in 13 matches for Santos in 2026, evolving from the explosive winger of his prime into something arguably more dangerous at this level — a creative attacking midfielder with elite vision and technical quality. Santos head coach Cuca backed him publicly, and legends including Romario, Cafu, and Zico lobbied Ancelotti directly. Even Lionel Messi weighed in, calling for his former Barcelona and PSG teammate to be on the plane to North America. When Ancelotti omitted Neymar from March friendlies against France and Croatia, fears grew. But the coach had always left the door open, insisting fitness — not sentiment — would be the deciding factor. Injuries to Rodrygo and Estevão created space in the attack, and Neymar's consistency at Santos sealed his fate."
+      },
+      {
+        "type": "paragraph",
+        "text": "Ancelotti was unequivocal at Monday's press conference. He noted that Neymar had improved his physical condition across the season and emphasized the intangible value he brings to the squad — not just his 79 international goals, a Brazilian record surpassing Pelé, but his effect on the dressing room. Brazil captain Marquinhos had said in March: 'As team-mates, as Brazilians and as fans, we want him at the World Cup.' Ancelotti listened. Shortly before the announcement, Neymar quietly updated his Instagram bio — adding 'Brazil' beside 'Santos.' It was the earliest hint the world got."
+      },
+      {
+        "type": "subheading",
+        "text": "What Role Can He Play?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Expectations need to be calibrated. Neymar is unlikely to be a starter in Group C, where Brazil face Morocco on June 13 in New Jersey, Haiti on June 19 in Philadelphia, and Scotland on June 24 in Miami. Ancelotti has built his attack around Vinícius Júnior, Raphinha, Matheus Cunha, and youngsters Endrick and Igor Thiago. Neymar's role is expected to be that of an impact substitute — a creative disruptor who can unlock defences with his vision and still take a penalty if the moment demands it. In a tournament where small margins decide everything, that is not a small thing."
+      },
+      {
+        "type": "quote",
+        "text": "We chose Neymar not because we think he'll be a good substitute. We chose Neymar because we believe he can help the team — whether it's for one minute, five minutes, 90 minutes, or even taking a penalty.",
+        "attribution": "Carlo Ancelotti, Brazil head coach"
+      }
+    ]
   }
 ]
