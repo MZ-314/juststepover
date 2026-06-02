@@ -400,14 +400,14 @@ async function initLiveScores() {
       toDate.setDate(today.getDate() + 7);
       
       const formatDate = d => d.toISOString().split('T')[0];
-      const apiUrl = `https://api.football-data.org/v4/matches?dateFrom=${formatDate(fromDate)}&dateTo=${formatDate(toDate)}`;
+      
+      // We use our own Vercel serverless function to bypass CORS
+      const apiUrl = `/api/football?dateFrom=${formatDate(fromDate)}&dateTo=${formatDate(toDate)}`;
 
-      const res = await fetch(apiUrl, {
-        headers: { 'X-Auth-Token': key }
-      });
+      // Notice we no longer need to pass the header here, the serverless function handles it securely!
+      const res = await fetch(apiUrl);
       
-      console.log('Football Data API Rate Limit Remaining:', res.headers.get('x-requests-available-minute'));
-      
+      const note = document.getElementById('live-scores-note');
       if (res.ok) {
         const data = await res.json();
         if (data.matches?.length) {
