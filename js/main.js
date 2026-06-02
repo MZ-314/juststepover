@@ -392,18 +392,21 @@ async function initLiveScores() {
 
   try {
     const today = new Date();
-      const fromDate = new Date(today);
-      fromDate.setDate(today.getDate() - 2);
-      const toDate = new Date(today);
-      toDate.setDate(today.getDate() + 7);
-      
-      const formatDate = d => d.toISOString().split('T')[0];
-      
-      // We use our own Vercel serverless function to bypass CORS
-      const apiUrl = `/api/football?dateFrom=${formatDate(fromDate)}&dateTo=${formatDate(toDate)}`;
+    const fromDate = new Date(today);
+    fromDate.setDate(today.getDate() - 1); // Only keep yesterday's matches in case there's an active night game
+    const toDate = new Date(today);
+    toDate.setDate(today.getDate() + 10); // Check 10 days into the future
+    
+    const formatDate = d => d.toISOString().split('T')[0];
+    
+    // WC, Champions League, Europa (via CL/Euro logic usually), Premier League, La Liga, Bundesliga, Serie A, Ligue 1
+    const comps = 'WC,CL,PL,PD,BL1,SA,FL1,EC';
+    
+    // We use our own Vercel serverless function to bypass CORS
+    const apiUrl = `/api/football?dateFrom=${formatDate(fromDate)}&dateTo=${formatDate(toDate)}&competitions=${comps}`;
 
-      // Notice we no longer need to pass the header here, the serverless function handles it securely!
-      const res = await fetch(apiUrl);
+    // Notice we no longer need to pass the header here, the serverless function handles it securely!
+    const res = await fetch(apiUrl);
       
       const note = document.getElementById('live-scores-note');
       if (res.ok) {
