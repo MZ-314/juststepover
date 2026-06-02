@@ -3,31 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JustStepover</title>
-  <meta name="description" content="Football writing from JustStepover.">
+  <title>Stories — JustStepover</title>
+  <meta name="description" content="Short-form football news briefs from JustStepover.">
   <script>(function(){var t=localStorage.getItem('jso-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
   <script src="js/config.js"></script>
 </head>
-<body class="article-page-defector" data-page="article">
+<body data-page="stories">
 
 <div id="site-header"></div>
 
 <main>
-  <div class="article-defector-hero" id="article-defector-hero">
-    <div class="loading" style="padding:60px 24px;font-family:var(--font-ui);color:var(--ink-soft);">
-      <div class="loading-spinner"></div> Loading…
+  <div class="page-wrap">
+    <header class="page-hero-band">
+      <div class="section-hd"></div>
+      <span class="section-hd-label">Stories</span>
+      <h1>News Briefs</h1>
+      <p>Short-form updates from across European football — the quick hits that matter right now.</p>
+    </header>
+    <div class="stories-grid" id="stories-grid">
+      <div class="loading"><div class="loading-spinner"></div>Loading stories…</div>
     </div>
   </div>
-
-  <div class="article-meta-bar">
-    <div class="article-meta-inner" id="article-meta"></div>
-  </div>
-
-  <article class="article-body" id="article-body"></article>
-
-  <div id="related-articles"></div>
 </main>
 
 <div id="site-footer"></div>

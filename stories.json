@@ -1,0 +1,50 @@
+[
+  {
+    "id": "s1",
+    "slug": "rashford-fitness-update",
+    "title": "Rashford passes late fitness test ahead of derby",
+    "kicker": "Premier League",
+    "time": "12m ago",
+    "excerpt": "Manchester United confirm the forward trained fully on Friday and is in the squad."
+  },
+  {
+    "id": "s2",
+    "slug": "ucl-semi-draw-reaction",
+    "title": "Semi-final draw sets up classic European tie",
+    "kicker": "Champions League",
+    "time": "38m ago",
+    "excerpt": "Two former winners will meet over two legs with everything still to play for."
+  },
+  {
+    "id": "s3",
+    "slug": "la-liga-title-gap",
+    "title": "La Liga title race down to two points with three games left",
+    "kicker": "La Liga",
+    "time": "1h ago",
+    "excerpt": "Madrid and Barcelona both won; the gap at the top has never been thinner."
+  },
+  {
+    "id": "s4",
+    "slug": "transfer-rumour-midfielder",
+    "title": "Premier League club lodge €45m bid for Serie A midfielder",
+    "kicker": "Transfers",
+    "time": "2h ago",
+    "excerpt": "Sources close to the deal say personal terms are not the stumbling block."
+  },
+  {
+    "id": "s5",
+    "slug": "england-squad-hint",
+    "title": "England manager hints at surprise call-up for June camp",
+    "kicker": "International",
+    "time": "3h ago",
+    "excerpt": "A Championship standout could get his first senior invitation next week."
+  },
+  {
+    "id": "s6",
+    "slug": "bundesliga-relegation-six-pointer",
+    "title": "Relegation six-pointer ends 2–2 in stoppage time drama",
+    "kicker": "Bundesliga",
+    "time": "4h ago",
+    "excerpt": "A 94th-minute equaliser keeps both sides in the drop zone fight alive."
+  }
+]

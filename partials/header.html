@@ -1,0 +1,94 @@
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<nav class="mobile-drawer" id="mobileDrawer" aria-label="Site navigation">
+  <div class="drawer-header">
+    <span class="drawer-logo">Just<em>Stepover</em></span>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">×</button>
+  </div>
+  <div class="drawer-nav-item">
+    <button class="drawer-main-link" data-drawer-toggle>Premier League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="drawer-sub"><a href="index.html">Title Race</a><a href="index.html">Match Reports</a><a href="index.html">Top Scorers</a><a href="index.html">Relegation Watch</a></div>
+  </div>
+  <div class="drawer-nav-item">
+    <button class="drawer-main-link" data-drawer-toggle>Champions League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="drawer-sub"><a href="index.html">Group Stage</a><a href="index.html">Knockouts</a><a href="index.html">Final</a></div>
+  </div>
+  <div class="drawer-nav-item">
+    <button class="drawer-main-link" data-drawer-toggle>Transfers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="drawer-sub"><a href="index.html">Summer Window</a><a href="index.html">Rumours</a><a href="index.html">Done Deals</a></div>
+  </div>
+  <div class="drawer-nav-item">
+    <button class="drawer-main-link" data-drawer-toggle>Culture <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="drawer-sub"><a href="index.html">History</a><a href="index.html">Fan Culture</a><a href="index.html">Columns</a></div>
+  </div>
+  <a href="stories.html" class="drawer-main-link" style="border-bottom:1px solid var(--border);">Stories</a>
+  <a href="weather.html" class="drawer-main-link" style="border-bottom:1px solid var(--border);">Weather</a>
+  <a href="newsletter.html" class="drawer-main-link" style="border-bottom:1px solid var(--border);">Newsletter</a>
+  <a href="about.html" class="drawer-main-link" style="border-bottom:1px solid var(--border);">About</a>
+  <div class="drawer-ctas">
+    <a href="newsletter.html" class="drawer-cta drawer-cta-red">Subscribe to newsletter</a>
+    <a href="#" class="drawer-cta drawer-cta-outline" id="drawerSearch">Search articles</a>
+  </div>
+</nav>
+
+<div class="site-chrome">
+<div class="top-bar">
+  <span class="top-bar-date" id="today-date"></span>
+  <a href="newsletter.html" id="topBarSupport">Support JustStepover</a>
+</div>
+
+<header class="site-header">
+  <div class="logo-row">
+    <div class="logo-row-left">
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="index.html" class="site-logo"><span class="logo-mark">JS</span>Just<em>Stepover</em></a>
+    </div>
+    <div class="logo-row-right">
+      <label class="theme-toggle" aria-label="Toggle dark mode">
+        <input type="checkbox" id="themeToggle" aria-label="Dark mode">
+        <span class="theme-toggle-slider"></span>
+        <span class="theme-toggle-icons"><span>☀</span><span>☾</span></span>
+      </label>
+      <button class="btn btn-search" id="searchBtn" type="button">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search
+      </button>
+      <button class="btn btn-subscribe" id="subscribeBtn" type="button">Subscribe</button>
+    </div>
+  </div>
+  <div class="nav-tabs-row">
+    <div class="nav-tab" data-tab>
+      <button class="nav-tab-btn" type="button" tabindex="0">Premier League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="nav-dropdown"><a href="index.html">Title Race</a><a href="index.html">Match Reports</a><a href="index.html">Top Scorers</a><a href="index.html">Relegation Watch</a></div>
+    </div>
+    <div class="nav-tab" data-tab>
+      <button class="nav-tab-btn" type="button" tabindex="0">Champions League <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="nav-dropdown"><a href="index.html">Group Stage</a><a href="index.html">Knockouts</a><a href="index.html">Final</a><a href="index.html">Club Rankings</a></div>
+    </div>
+    <div class="nav-tab" data-tab>
+      <button class="nav-tab-btn" type="button" tabindex="0">Transfers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="nav-dropdown"><a href="index.html">Summer Window</a><a href="index.html">January Window</a><a href="index.html">Rumours</a><a href="index.html">Done Deals</a></div>
+    </div>
+    <div class="nav-tab" data-tab>
+      <button class="nav-tab-btn" type="button" tabindex="0">Tactics &amp; Analysis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="nav-dropdown"><a href="index.html">Tactical Breakdowns</a><a href="index.html">Manager Profiles</a><a href="index.html">Stats Deep Dives</a></div>
+    </div>
+    <div class="nav-tab" data-tab>
+      <button class="nav-tab-btn" type="button" tabindex="0">Culture <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="nav-dropdown"><a href="index.html">History</a><a href="index.html">Fan Culture</a><a href="index.html">Books &amp; Films</a><a href="index.html">Columns</a></div>
+    </div>
+    <div class="nav-tab" data-tab>
+      <button class="nav-tab-btn" type="button" tabindex="0">Opinion <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="nav-dropdown"><a href="index.html">Editor's Picks</a><a href="index.html">Hot Takes</a><a href="index.html">Letters</a></div>
+    </div>
+    <a href="index.html" class="nav-tab-link" data-nav-page="home">Home</a>
+    <a href="stories.html" class="nav-tab-link" data-nav-page="stories">Stories</a>
+    <a href="weather.html" class="nav-tab-link" data-nav-page="weather">Weather</a>
+    <a href="newsletter.html" class="nav-tab-link" data-nav-page="newsletter">Newsletter</a>
+    <a href="about.html" class="nav-tab-link" data-nav-page="about">About</a>
+  </div>
+  <div class="read-progress" id="readProgress" aria-hidden="true" style="display:none;"></div>
+</header>
+</div>
