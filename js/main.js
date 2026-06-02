@@ -393,9 +393,9 @@ async function initLiveScores() {
   try {
     const today = new Date();
     const fromDate = new Date(today);
-    fromDate.setDate(today.getDate() - 1); // Only keep yesterday's matches in case there's an active night game
+    // Start from today (to fit the API's strict 10-day maximum limit)
     const toDate = new Date(today);
-    toDate.setDate(today.getDate() + 10); // Check 10 days into the future
+    toDate.setDate(today.getDate() + 10); // Look exactly 10 days ahead
     
     const formatDate = d => d.toISOString().split('T')[0];
     
