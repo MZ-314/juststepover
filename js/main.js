@@ -389,11 +389,9 @@ async function initLiveScores() {
   
   const section = track.closest('.live-scores-section');
   let scores = [];
-  const key = window.JSO_CONFIG?.FOOTBALL_DATA_API_KEY;
 
-  if (key) {
-    try {
-      const today = new Date();
+  try {
+    const today = new Date();
       const fromDate = new Date(today);
       fromDate.setDate(today.getDate() - 2);
       const toDate = new Date(today);
@@ -439,9 +437,8 @@ async function initLiveScores() {
           if (note) note.textContent = hasLive ? 'Live & Upcoming' : 'Upcoming Matches';
         }
       }
-    } catch (e) {
-      console.error("Could not fetch live scores:", e);
-    }
+  } catch (e) {
+    console.error("Could not fetch live scores:", e);
   }
 
   // Hide the entire live scores section if there are no matches or no API key

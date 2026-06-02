@@ -36,7 +36,6 @@ fs.readdirSync(srcJsDir).forEach(file => {
   if (file === 'config.template.js') {
     // Generate config.js dynamically for the production build
     let config = fs.readFileSync(path.join(srcJsDir, file), 'utf8');
-    config = config.replace('FOOTBALL_API_KEY_PLACEHOLDER', process.env.FOOTBALL_DATA_API_KEY || '');
     config = config.replace('WEATHER_API_KEY_PLACEHOLDER', process.env.OPENWEATHER_API_KEY || '');
     fs.writeFileSync(path.join(destJsDir, 'config.js'), config);
   } else if (file !== 'config.js') {
